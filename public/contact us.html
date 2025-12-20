@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <title>Contact Us | Rubyland Limited</title>
+    <meta name="description" content="Contact Rubyland Limited for all your real estate needs. Expert valuation, consultation, and property services in Kenya.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo ONLY.png">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Assets/css/main.css">
+    <link rel="stylesheet" href="Assets/css/contact.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+    </script>
+</head>
+<body>
+    <!-- Contact Navbar (Same as main page) -->
+    <div class="contact-navbar">
+        <div class="container">
+            <div class="contact-info">
+                <div><i class="fas fa-phone"></i> +254 700 000 000</div>
+                <div><i class="fas fa-envelope"></i> info@rubyland.co.ke</div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="main-navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo"><img src="Assets/img/logo ONLY.png" alt="">Ruby<span>land</span></a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Who We Are</a>
+                        <a href="#">The Team</a>
+                        <a href="#">Our Story</a>
+                        <a href="#">Branches</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content services-dropdown">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Property Valuation</h4>
+                                <p>Accurate property assessments for various purposes</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Property Search</h4>
+                                <p>Find your ideal property with our expert guidance</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Title Deed Services</h4>
+                                <p>Secure and verify your property ownership documents</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Market Analysis</h4>
+                                <p>Comprehensive real estate market insights</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Consultation</h4>
+                                <p>Expert advice for all your real estate concerns</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Training</h4>
+                                <p>Real estate investment education and workshops</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="listings.html">Available Listings</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Contact Us</h1>
+            <p>Get expert real estate advice and solutions tailored just for you</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Why Contact Us -->
+    <section class="section why-contact">
+        <div class="container">
+            <h2 class="section-title">Why Contact Rubyland?</h2>
+            
+            <div class="contact-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1250">0</div>
+                    <div class="stat-text">Clients Helped This Year</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-text">Satisfaction Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-text">Hours Average Response Time</div>
+                </div>
+            </div>
+
+            <div class="contact-purposes">
+                <div class="purpose-card">
+                    <div class="purpose-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Search Assistance</h3>
+                    <p>Struggling to find the perfect property? Our experts will match you with properties that fit your budget, location, and lifestyle preferences.</p>
+                </div>
+                <div class="purpose-card">
+                    <div class="purpose-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Title Verification</h3>
+                    <p>Concerned about property ownership? We conduct thorough title searches and verification to ensure your investment is secure.</p>
+                </div>
+                <div class="purpose-card">
+                    <div class="purpose-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Investment Advice</h3>
+                    <p>Unsure about real estate investment opportunities? Get expert guidance on market trends, ROI analysis, and investment strategies.</p>
+                </div>
+                <div class="purpose-card">
+                    <div class="purpose-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Legal Consultation</h3>
+                    <p>Navigating complex real estate laws? Our legal experts provide clarity on regulations, contracts, and compliance requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Contact Form -->
+    <section class="contact-form-section">
+        <div class="container contact-container">
+            <!-- Left Column: Contact Info with Image -->
+            <div class="contact-info-side">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                     alt="Rubyland Office" class="contact-bg-image" loading="lazy">
+                <div class="contact-info-overlay">
+                    <div class="contact-details">
+                        <h3>Get In Touch</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone Numbers</h4>
+                                <p>+254 700 000 000</p>
+                                <p>+254 711 000 000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Addresses</h4>
+                                <p>info@rubyland.co.ke</p>
+                                <p>sales@rubyland.co.ke</p>
+                                <p>support@rubyland.co.ke</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Head Office</h4>
+                                <p>Rubyland House, Westlands</p>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="business-hours">
+                            <h4>Business Hours</h4>
+                            <ul class="hours-list">
+                                <li><span>Monday - Friday:</span> <span>8:00 AM - 5:00 PM</span></li>
+                                <li><span>Saturday:</span> <span>9:00 AM - 1:00 PM</span></li>
+                                <li><span>Sunday:</span> <span>Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form">
+                <h2 class="form-title">Send Us a Message</h2>
+                <p>Complete the form and we’ll get back to you within 2 hours.</p>
+                
+                <form id="contactForm" method="POST" action="https://api.staticforms.xyz/submit">
+                    <!-- StaticForms token -->
+                    <input type="hidden" name="accessKey" value="sf_b5f3nb2jei5f2bkf9iahll13">
+                    <input type="hidden" name="subject" value="New Contact Form Submission - Rubyland Website">
+                    
+                    <div id="formStatus" class="form-status"></div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="topic" class="form-label">Topic of Inquiry *</label>
+                        <select id="topic" name="topic" class="form-control" required>
+                            <option value="">Select a topic</option>
+                            <option value="property-valuation">Property Valuation</option>
+                            <option value="title-verification">Title Verification</option>
+                            <option value="property-search">Property Search</option>
+                            <option value="investment-advice">Investment Advice</option>
+                            <option value="feasibility-study">Feasibility Study</option>
+                            <option value="legal-consultation">Legal Consultation</option>
+                            <option value="training">Training & Workshops</option>
+                            <option value="general-inquiry">General Inquiry</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message *</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferredContact" class="form-label" style="text-align: center;">Preferred Contact Method</label>
+                        <div style="display: flex; gap: 30px; margin-top: 10px; justify-content: center;">
+                            <div class="checkbox-wrapper-16">
+  <label class="checkbox-wrapper">
+    <input class="checkbox-input" type="radio" name="contactMethod" value="phone" checked>
+    <span class="checkbox-tile">
+      <span class="checkbox-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+      </span>
+      <span class="checkbox-label">Phone Call</span>
+    </span>
+  </label>
+</div>
+                            <div class="checkbox-wrapper-16" style="display: flex; align-items: center; gap: 5px;">
+  <label class="checkbox-wrapper">
+    <input class="checkbox-input" type="radio" name="contactMethod" value="email">
+    <span class="checkbox-tile">
+      <span class="checkbox-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail-opened"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 9l9 6l9 -6l-9 -6l-9 6" /><path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 19l6 -6" /><path d="M15 13l6 6" /></svg>
+      </span>
+      <span class="checkbox-label">Email</span>
+    </span>
+  </label>
+</div>
+                            <div class="checkbox-wrapper-16" style="display: flex; align-items: center; gap: 5px;">
+  <label class="checkbox-wrapper">
+    <input class="checkbox-input" type="radio" name="contactMethod" value="whatsapp">
+    <span class="checkbox-tile">
+      <span class="checkbox-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+      </span>
+      <span class="checkbox-label">Whatsapp</span>
+    </span>
+  </label>
+</div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">
+                        <span id="submitText">Send Message</span>
+                        <span id="loadingSpinner" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Testimonials -->
+    <section class="contact-testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonials-track">
+                    <!-- Testimonial items will duplicate for seamless scroll -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>James Kariuki</h4>
+                                <p class="client-role">Property Investor</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Rubyland's consultation service saved me from a fraudulent property deal. Their title verification process is impeccable!"</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>Sarah Wambui</h4>
+                                <p class="client-role">First-time Home Buyer</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The team was responsive and professional. They found me the perfect home within my budget."</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>Michael Ochieng</h4>
+                                <p class="client-role">Business Owner</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Their market analysis report helped us make a strategic commercial property purchase. Great ROI!"</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>Grace Mwangi</h4>
+                                <p class="client-role">Real Estate Developer</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Feasibility study was detailed and accurate. It guided our project planning perfectly."</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>David Mutua</h4>
+                                <p class="client-role">Expatriate Investor</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"As an overseas investor, Rubyland provided complete peace of mind. Their communication was excellent."</p>
+                    </div>
+                    
+                    <!-- Duplicate items for seamless scroll -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>James Kariuki</h4>
+                                <p class="client-role">Property Investor</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Rubyland's consultation service saved me from a fraudulent property deal. Their title verification process is impeccable!"</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>Sarah Wambui</h4>
+                                <p class="client-role">First-time Home Buyer</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The team was responsive and professional. They found me the perfect home within my budget."</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>Michael Ochieng</h4>
+                                <p class="client-role">Business Owner</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Their market analysis report helped us make a strategic commercial property purchase. Great ROI!"</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>Grace Mwangi</h4>
+                                <p class="client-role">Real Estate Developer</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Feasibility study was detailed and accurate. It guided our project planning perfectly."</p>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4>David Mutua</h4>
+                                <p class="client-role">Expatriate Investor</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"As an overseas investor, Rubyland provided complete peace of mind. Their communication was excellent."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: FAQs -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-column">
+                    <h3>General Questions</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question active">
+                            How quickly will I get a response after submitting the contact form?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer show">
+                            <p>We guarantee a response within 2 business hours during our working hours (Monday-Friday, 8 AM-5 PM). For inquiries submitted outside these hours, you'll receive a response by the next business day morning.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What information should I provide when contacting about property valuation?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Please provide: Property location (full address), size (acres or square feet), current use, any existing structures, title deed details, and the purpose of valuation (sale, mortgage, insurance, etc.). Photos and survey maps are helpful if available.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer free initial consultations?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer a free 30-minute initial consultation for new clients. This allows us to understand your needs and provide preliminary guidance on how we can assist you with your real estate requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What areas in Kenya do you cover?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We operate nationwide with offices in Nairobi, Mombasa, and Kisumu. Our services extend to all counties in Kenya, including remote areas where we have established partnerships with local professionals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I verify that my property title is genuine?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our title verification process includes: Cross-checking with land registry records, verifying ownership history, checking for any encumbrances or charges, and confirming survey details. We provide a comprehensive report with our findings.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-column">
+                    <h3>Services & Processes</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How long does a full property valuation take?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A complete property valuation typically takes 3-5 business days from site visit to report delivery. Complex properties or those requiring additional research may take up to 7 business days.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What's included in your feasibility studies?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our feasibility studies include: Market analysis, financial projections, risk assessment, regulatory compliance check, site suitability analysis, and detailed recommendations with implementation timeline.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can you help with international property transactions?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we assist international clients with Kenyan property transactions, including remote due diligence, virtual tours, legal coordination, and liaison with local authorities on your behalf.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What payment methods do you accept?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept bank transfers, mobile money (M-Pesa, Airtel Money), credit/debit cards, and checks. International clients can pay via wire transfer or through our secure online payment portal.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer emergency property consultation?
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer emergency consultation services for urgent situations like fraudulent property deals, imminent transactions, or legal deadlines. Contact our emergency line: +254 720 000 000.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="assets/img/logo ONLY.png" alt="Rubyland Limited">
+                        <span>Rubyland<br>Limited</span>
+                    </div>
+                    <p>With over 24 years of experience, Rubyland Limited is your trusted partner for all real estate needs in Kenya. We provide expert valuation, consultation, and property services to individuals and businesses.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address" aria-label="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="listings.html">Properties</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Property Valuation</a></li>
+                        <li><a href="#">Feasibility Studies</a></li>
+                        <li><a href="#">Title Deed Services</a></li>
+                        <li><a href="#">Property Search</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                        <li><a href="#">Investment Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Office Locations</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi Headquarters</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mombasa Branch</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kisumu Office</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                        <li><i class="fas fa-clock"></i> Sat: 9:00 AM - 1:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rubyland Limited. All Rights Reserved. | <a href="assets/downloads/rubyland-terms.pdf" download>Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/contact.js"></script>
+</body>
+</html>
