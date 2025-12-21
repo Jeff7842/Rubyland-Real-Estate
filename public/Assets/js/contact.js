@@ -79,37 +79,26 @@ document.addEventListener('DOMContentLoaded', function() {
             try {
                 // Send to EmailJS
                 await emailjs.send(
-                    'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-                    'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+                    'service_x3xv3aw', // Replace with your EmailJS service ID
+                    'template_11h5jra', // Replace with your EmailJS template ID
                     {
-                        from_name: `${data.firstName} ${data.lastName}`,
-                        from_email: data.email,
-                        phone: data.phone,
+                        name: `${data.firstName} ${data.lastName}`,
                         topic: data.topic,
                         message: data.message,
                         contact_method: data.contactMethod,
-                        to_email: data.email
+                        email: data.email
                     }
                 );
                 
                 // Send to StaticForms as backup
-                const staticFormsResponse = await fetch('https://api.staticforms.xyz/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        accessKey: 'YOUR_STATICFORMS_ACCESS_KEY', // Replace with your key
-                        subject: `New Contact Form: ${data.topic}`,
-                        from: data.email,
-                        name: `${data.firstName} ${data.lastName}`,
-                        phone: data.phone,
-                        message: data.message,
-                        honeypot: '',
-                        replyTo: data.email,
-                        ...data
-                    })
-                });
+                const formData = new FormData(contactForm);
+formData.append('apiKey', 'sf_b5f3nb2jei5f2bkf9iahll13');
+formData.append('subject', 'New Contact Form Submission');
+
+await fetch('https://api.staticforms.dev/submit', {
+  method: 'POST',
+  body: formData
+});
                 
                 // Show success message
                 formStatus.textContent = 'Thank you! Your message has been sent successfully. We\'ll respond within 2 hours.';

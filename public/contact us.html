@@ -24,7 +24,7 @@
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+        emailjs.init('ZSlUX3HD3vo75GT0X'); // Replace with your EmailJS public key
     </script>
 </head>
 <body>
@@ -251,10 +251,11 @@
                 <h2 class="form-title">Send Us a Message</h2>
                 <p>Complete the form and we’ll get back to you within 2 hours.</p>
                 
-                <form id="contactForm" method="POST" action="https://api.staticforms.xyz/submit">
+                <form id="contactForm" >
                     <!-- StaticForms token -->
-                    <input type="hidden" name="accessKey" value="sf_b5f3nb2jei5f2bkf9iahll13">
-                    <input type="hidden" name="subject" value="New Contact Form Submission - Rubyland Website">
+
+                   
+
                     
                     <div id="formStatus" class="form-status"></div>
                     
@@ -286,16 +287,16 @@
                         <label for="topic" class="form-label">Topic of Inquiry *</label>
                         <select id="topic" name="topic" class="form-control" required>
                             <option value="">Select a topic</option>
-                            <option value="property-valuation">Property Valuation</option>
-                            <option value="title-verification">Title Verification</option>
-                            <option value="property-search">Property Search</option>
-                            <option value="investment-advice">Investment Advice</option>
-                            <option value="feasibility-study">Feasibility Study</option>
-                            <option value="legal-consultation">Legal Consultation</option>
-                            <option value="training">Training & Workshops</option>
-                            <option value="general-inquiry">General Inquiry</option>
-                            <option value="complaint">Complaint</option>
-                            <option value="other">Other</option>
+                            <option value="Property Valuation">Property Valuation</option>
+                            <option value="Title Verification">Title Verification</option>
+                            <option value="Property Search">Property Search</option>
+                            <option value="Investment Advice">Investment Advice</option>
+                            <option value="Feasibility Study">Feasibility Study</option>
+                            <option value="Legal Consultation">Legal Consultation</option>
+                            <option value="Training & Workshops">Training & Workshops</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="">Other</option>
                         </select>
                     </div>
                     
@@ -320,7 +321,7 @@
 </div>
                             <div class="checkbox-wrapper-16" style="display: flex; align-items: center; gap: 5px;">
   <label class="checkbox-wrapper">
-    <input class="checkbox-input" type="radio" name="contactMethod" value="email">
+    <input class="checkbox-input" type="radio" name="contactMethod" value="Email">
     <span class="checkbox-tile">
       <span class="checkbox-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail-opened"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 9l9 6l9 -6l-9 -6l-9 6" /><path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 19l6 -6" /><path d="M15 13l6 6" /></svg>
