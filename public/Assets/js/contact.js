@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 statsObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
     const statsSection = document.querySelector('.why-contact');
     if (statsSection) {
