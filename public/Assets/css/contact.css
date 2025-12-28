@@ -59,8 +59,8 @@
             top:0;
         }
 
-        .main-navbar .nav-links a {
-            color: var(--dark-gray);
+        .main-navbar .nav-links li {
+            color: var(--white);
         }
 
         .main-navbar .logo {
@@ -80,13 +80,13 @@
 .contact-hero {
     height: 70vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
-                url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80') no-repeat center center/cover;
+                url('https://images.unsplash.com/photo-1587560699334-bea93391dcef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .contact-hero-content {
@@ -628,7 +628,7 @@ textarea.form-control {
     }
     .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1600px;
             margin: 0 auto;
             padding: 0 25px;
         }
@@ -699,7 +699,7 @@ textarea.form-control {
     }
     .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1600px;
             margin: 0 auto;
             padding: 0 20px;
         }

@@ -301,3 +301,90 @@ window.addEventListener("resize", activateVerticalSteps);
             document.documentElement.style.setProperty('--transition', 'none');
             clearInterval(testimonialInterval);
         }
+
+        // Image Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliderTrack = document.getElementById('propertySlider');
+            const slides = document.querySelectorAll('.slider-slide');
+            const prevBtn = document.querySelector('.property-prev-slide');
+            const nextBtn = document.querySelector('.property-next-slide');
+            
+            let currentSlide = 0;
+            const slideCount = slides.length;
+            
+            function updateSlider() {
+                sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+            
+            nextBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSlider();
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+                updateSlider();
+            });
+            
+            // Auto slide every 5 seconds
+            setInterval(function() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSlider();
+            }, 5000);
+            
+            // Scroll Animations
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85 &&
+                    rect.bottom >= 0
+                );
+            }
+            
+            function handleScrollAnimation() {
+                document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                    if (isElementInViewport(el)) {
+                        el.classList.add('animated');
+                    }
+                });
+            }
+            
+            // Initial check
+            handleScrollAnimation();
+            
+            // Listen for scroll
+            window.addEventListener('scroll', handleScrollAnimation);
+            
+            // Animate stats on load
+            setTimeout(() => {
+                document.querySelectorAll('.hero-stat-item').forEach((stat, index) => {
+                    setTimeout(() => {
+                        stat.classList.add('animated');
+                    }, index * 200);
+                });
+            }, 500);
+            
+            // Hover card animations
+            document.querySelectorAll('.hover-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Feature card icon animations
+            document.querySelectorAll('.feature-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    const icon = this.querySelector('.feature-icon');
+                    icon.style.transform = 'rotate(360deg) scale(1.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    const icon = this.querySelector('.feature-icon');
+                    icon.style.transform = 'rotate(0) scale(1)';
+                });
+            });
+        });

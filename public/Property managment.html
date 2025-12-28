@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Management Services | Rubyland Limited - Relationship Management Excellence</title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Rubyland's innovative Relationship Management approach to property management in Kenya. 24+ years of experience with zero turnover rates and 100%+ occupancy.">
+    <meta name="keywords" content="property management Kenya, rental property management, tenant management, real estate management, property maintenance">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo ONLY.png"/>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Assets/css/main.css"/>
+    <style>
+        /* ===== PROPERTY MANAGEMENT PAGE STYLES ===== */
+        :root {
+            --management-blue: #cc0000;
+            --management-light-blue: #e6f2ff;
+            --management-green: #00a859;
+            --management-light-green: #e6f7f0;
+        }
+        
+        /* Property Management Hero */
+        .management-hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .management-hero-content {
+            max-width: 900px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .management-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+        
+        .management-hero h1 span {
+            color: var(--primary-red);
+        }
+        
+        .hero-stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero-stat-item {
+            text-align: center;
+            animation: fadeInUp 1s ease-out 0.6s forwards;
+            opacity: 0;
+        }
+        
+        .hero-stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            display: block;
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .hero-stat-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Relationship Management Intro */
+        .relationship-intro {
+            background: var(--light-gray);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .relationship-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .relationship-content h2 {
+            color: var(--management-blue);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .relationship-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--management-blue);
+        }
+        
+        .relationship-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-strong);
+            position: relative;
+            height: 500px;
+        }
+        
+        .relationship-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .relationship-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .relationship-tagline {
+            background: var(--management-light-blue);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-top: 30px;
+            border-left: 4px solid var(--management-blue);
+            font-style: italic;
+            font-weight: 500;
+        }
+        
+        /* Management Features Grid */
+        .management-features {
+            background: var(--white);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            position: relative;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .feature-card:hover .feature-icon {
+            background: var(--management-blue);
+            color: var(--white);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 102, 204, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto 25px;
+            color: var(--management-blue);
+            font-size: 32px;
+            transition: var(--transition);
+        }
+        
+        .feature-content {
+            padding: 0 25px 30px;
+            text-align: center;
+        }
+        
+        .feature-content h3 {
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+        
+        /* Management Stats */
+        .management-stats {
+            background: linear-gradient(135deg, var(--management-blue) 0%, var(--management-green) 100%);
+            color: var(--white);
+            padding: 80px 0;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--white);
+            display: block;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .stat-text {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        /* Process Timeline */
+        .management-process {
+            background: var(--light-gray);
+        }
+        
+        .process-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .process-timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background: var(--management-blue);
+        }
+        
+        .process-step {
+            margin-bottom: 50px;
+            position: relative;
+            width: 50%;
+            padding-right: 40px;
+        }
+        
+        .process-step:nth-child(even) {
+            margin-left: 50%;
+            padding-right: 0;
+            padding-left: 40px;
+        }
+        
+        .process-dot {
+            position: absolute;
+            top: 30px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--management-blue);
+            border: 4px solid var(--white);
+            box-shadow: 0 0 0 4px var(--management-blue);
+        }
+        
+        .process-step:nth-child(even) .process-dot {
+            right: auto;
+            left: -10px;
+        }
+        
+        .process-content {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            width: 500px;
+        }
+        
+        .process-content h3 {
+            color: var(--management-blue);
+            margin-bottom: 10px;
+        }
+        
+        .process-number {
+            display: inline-block;
+            background: var(--management-blue);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        /* Image Slider Section */
+        .property-slider-section {
+            background: var(--white);
+            padding: 100px 0;
+        }
+        
+        .slider-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .slider-slide {
+            min-width: 100%;
+            height: 500px;
+            position: relative;
+        }
+        
+        .slider-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .slide-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: var(--white);
+            padding: 40px;
+        }
+        
+        .slide-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+        
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        
+        .slider-arrow {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        }
+        
+        .slider-arrow:hover {
+            background: var(--management-blue);
+            transform: scale(1.1);
+        }
+        
+        /* Hover Cards Section */
+        .hover-cards-section {
+            background: var(--light-gray);
+            padding: 100px 0;
+        }
+        
+        .hover-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .hover-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            position: relative;
+            height: 300px;
+        }
+        
+        .hover-card-bg {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+        }
+        
+        .hover-card-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            color: var(--white);
+            padding: 30px;
+            transform: translateY(100px);
+            transition: var(--transition);
+        }
+
+        .hover-card-content h3 {
+            color: var(--white);
+        }
+        
+        .hover-card:hover .hover-card-content {
+            transform: translateY(0);
+        }
+        
+        .hover-card:hover .hover-card-bg {
+            transform: scale(1.1);
+        }
+        
+        .hover-card-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--management-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--white);
+            font-size: 24px;
+        }
+        
+        /* CTA Section */
+        .management-cta {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .management-cta h2 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+        
+        .management-cta p {
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .cta-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-stat {
+            text-align: center;
+        }
+        
+        .cta-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .cta-stat-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hover-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .relationship-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .process-timeline:before {
+                left: 30px;
+            }
+            
+            .process-step {
+                width: 100%;
+                padding-right: 0;
+                padding-left: 70px;
+            }
+            
+            .process-step:nth-child(even) {
+                margin-left: 0;
+                padding-left: 70px;
+            }
+            
+            .process-dot {
+                left: 21px;
+                right: auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .management-hero {
+                height: 70vh;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hover-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .slider-slide {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <div class="navbar-section">
+        <div class="contact-navbar">
+            <div class="container">
+                <div class="contact-info">
+                    <div><i class="fas fa-phone"></i> +254 700 000 000</div>
+                    <div><i class="fas fa-envelope"></i> info@rubyland.co.ke</div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="main-navbar">
+            <div class="container navbar-container">
+                <a href="index.html" class="logo"><img src="Assets/img/logo ONLY.png" alt="">Ruby<span>land</span></a>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="About Us.html">About Us <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="About Us.html#what-is-rubyland">Who We Are</a>
+                            <a href="About Us.html#the-team">The Team</a>
+                            <a href="About Us.html#our-story">Our Story</a>
+                            <a href="About Us.html#branches">Branches</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content services-dropdown">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h4>Property Valuation</h4>
+                                    <p>Accurate property assessments for various purposes</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h4>Property Search</h4>
+                                    <p>Find your ideal property with our expert guidance</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h4>Title Deed Services</h4>
+                                    <p>Secure and verify your property ownership documents</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h4>Market Analysis</h4>
+                                    <p>Comprehensive real estate market insights</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h4>Property Management</h4>
+                                    <p>Professional management of rental properties</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h4>Training</h4>
+                                    <p>Real estate investment education and workshops</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="listings.html">Available Listings</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Property Management Hero -->
+    <section class="management-hero">
+        <div class="management-hero-content">
+            <h1>Property <span>Relationship</span> Management</h1>
+            <p>Beyond rent collection — building lasting partnerships that deliver 100%+ occupancy, zero turnover rates, and exceptional returns on your property investment.</p>
+            <a href="#contact" class="btn btn-primary">Start Managing Your Property</a>
+            
+            <div class="hero-stats-row">
+                <div class="hero-stat-item">
+                    <span class="hero-stat-number">24+</span>
+                    <span class="hero-stat-text">Years Experience</span>
+                </div>
+                <div class="hero-stat-item">
+                    <span class="hero-stat-number">100%+</span>
+                    <span class="hero-stat-text">Occupancy Rate</span>
+                </div>
+                <div class="hero-stat-item">
+                    <span class="hero-stat-number">0</span>
+                    <span class="hero-stat-text">Legal Cases</span>
+                </div>
+                <div class="hero-stat-item">
+                    <span class="hero-stat-number">99%</span>
+                    <span class="hero-stat-text">Tenant Retention</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Relationship Management Intro -->
+    <section class="section relationship-intro">
+        <div class="container">
+            <div class="relationship-container">
+                <div class="relationship-content animate-on-scroll">
+                    <h2>We Call It Relationship Management</h2>
+                    <p>Proper management of a property will produce the desired investment objectives. Property management goes beyond collecting and remitting rent to the landlord. The ability to do so timely and with ease while handling tenants with respect and dignity is crucial.</p>
+                    <p>At Rubyland Limited, property management is not a job but a relationship that is built over time to benefit all parties. We do so while ensuring the property is kept clean and in good condition in terms of repairs and maintenance.</p>
+                    <p>That explains why our turnover rates are almost zero, occupancy rates are above 100% and there are no legal cases in the properties we manage. You can surely trust us with your rental property.</p>
+                    
+                    <div class="relationship-tagline">
+                        "One of the key factors that set Rubyland apart from its competitors is our innovative approach to property management."
+                    </div>
+                </div>
+                <div class="relationship-image animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1724482606633-fa74fe4f5de1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Property Management Relationship">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Features Grid -->
+    <section class="section management-features">
+        <div class="container">
+            <h2 class="section-title">Our Management Approach</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Tenant Selection & Onboarding</h3>
+                        <p>We conduct thorough interviews and background checks before onboarding any tenant, ensuring only qualified individuals occupy your property.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Proactive Conflict Management</h3>
+                        <p>We address concerns before they escalate into conflicts, maintaining harmonious relationships between landlords and tenants.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Guaranteed Rent Collection</h3>
+                        <p>Property owners receive the agreed rental amount by the agreed date, whether we have collected from tenants or not.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Maintenance & Repairs</h3>
+                        <p>Regular property inspections and prompt maintenance ensure your property remains in excellent condition year-round.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Performance Optimization</h3>
+                        <p>We leverage cutting-edge technology and data-driven insights to optimize property performance and enhance tenant satisfaction.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Legal Compliance</h3>
+                        <p>Full compliance with all property management regulations, including protected tenancies and distress for non-payment procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Stats -->
+    <section class="management-stats">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--white);">Our Management Excellence</h2>
+            <div class="stats-container">
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number">24+</span>
+                    <span class="stat-text">Years Experience</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number">100%+</span>
+                    <span class="stat-text">Occupancy Rate</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number">0%</span>
+                    <span class="stat-text">Turnover Rate</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number">0</span>
+                    <span class="stat-text">Legal Cases</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Due Diligence Process -->
+    <section class="section management-process">
+        <div class="container">
+            <h2 class="section-title">Our Due Diligence Process</h2>
+            <div class="process-timeline">
+                <div class="process-step animate-on-scroll">
+                    <div class="process-dot"></div>
+                    <div class="process-content">
+                        <span class="process-number">Step 1</span>
+                        <h3>Registration & Licensing</h3>
+                        <p>By Law, all persons practicing as Property Managers or Agents in Kenya must be Registered and Licensed by the Estate Agents Registration Board and have a current Professional Indemnity Cover to protect members of the public. Rubyland is duly compliant and can be trusted to safeguard your property.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-on-scroll">
+                    <div class="process-dot"></div>
+                    <div class="process-content">
+                        <span class="process-number">Step 2</span>
+                        <h3>Legal Expertise</h3>
+                        <p>Rubyland has been involved in the management of all types of properties commercial and residential with an experience of more than 24 years. We are well equipped to handle all the legal intricacies involving property management including protected and controlled tenancies as well as levying distress for non payment.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-on-scroll">
+                    <div class="process-dot"></div>
+                    <div class="process-content">
+                        <span class="process-number">Step 3</span>
+                        <h3>Investment Vehicle Management</h3>
+                        <p>As a company, we go beyond rent collection. We have the experience and skills to take care of your property as an investment vehicle by managing the stakeholders effectively be they the landlord, tenants, service providers, government agencies etc., while making sure the property is well maintained.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-on-scroll">
+                    <div class="process-dot"></div>
+                    <div class="process-content">
+                        <span class="process-number">Step 4</span>
+                        <h3>Risk Management</h3>
+                        <p>As property managers we ensure the economic life of the property is safeguarded. We ensure service costs are managed effectively not to affect rent while taking care of tenants concerns. We manage concerns before they develop into conflicts thus minimizing voids which affect property returns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Image Slider -->
+    <section class="property-slider-section">
+        <div class="container">
+            <h2 class="section-title">Properties Under Our Care</h2>
+            <div class="slider-container animate-on-scroll">
+                <div class="slider-track" id="propertySlider">
+                    <div class="slider-slide">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Luxury Apartment Building">
+                        <div class="slide-overlay">
+                            <h3 class="slide-title">Luxury Residential Apartments</h3>
+                            <p>Managed for 5+ years with 100% occupancy</p>
+                        </div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80" alt="Commercial Office Complex">
+                        <div class="slide-overlay">
+                            <h3 class="slide-title">Commercial Office Complex</h3>
+                            <p>24/7 management with premium corporate tenants</p>
+                        </div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Modern Residential Estate">
+                        <div class="slide-overlay">
+                            <h3 class="slide-title">Gated Community Estate</h3>
+                            <p>Full-service management including security and amenities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-arrow prev-slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="slider-arrow next-slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hover Cards Section -->
+    <section class="hover-cards-section">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Management Services</h2>
+            <div class="hover-cards-grid">
+                <div class="hover-card animate-on-scroll">
+                    <div class="hover-card-bg" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2058&q=80');"></div>
+                    <div class="hover-card-content">
+                        <div class="hover-card-icon">
+                            <i class="fas fa-money-check-alt"></i>
+                        </div>
+                        <h3>Rent Collection & Financial Reporting</h3>
+                        <p>Timely collection and detailed financial statements</p>
+                    </div>
+                </div>
+                
+                <div class="hover-card animate-on-scroll">
+                    <div class="hover-card-bg" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"></div>
+                    <div class="hover-card-content">
+                        <div class="hover-card-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Tenant Screening & Relations</h3>
+                        <p>Vetting and maintaining positive tenant relationships</p>
+                    </div>
+                </div>
+                
+                <div class="hover-card animate-on-scroll">
+                    <div class="hover-card-bg" style="background-image: url('https://images.unsplash.com/photo-1722227089176-a981d2544b5f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="hover-card-content">
+                        <div class="hover-card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Maintenance & Emergency Response</h3>
+                        <p>24/7 maintenance and rapid emergency response</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="management-cta">
+        <div class="container">
+            <h2>Ready to Transform Your Property Investment?</h2>
+            <p>Join hundreds of property owners who trust Rubyland Limited with their valuable assets. Experience the difference of true relationship management.</p>
+            <a href="contact us.html" class="btn btn-primary">Get Started Today</a>
+            
+            <div class="cta-stats">
+                <div class="cta-stat">
+                    <span class="cta-stat-number">24+</span>
+                    <span class="cta-stat-text">Years of Trust</span>
+                </div>
+                <div class="cta-stat">
+                    <span class="cta-stat-number">0</span>
+                    <span class="cta-stat-text">Legal Disputes</span>
+                </div>
+                <div class="cta-stat">
+                    <span class="cta-stat-number">100%+</span>
+                    <span class="cta-stat-text">Occupancy Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="assets/img/logo ONLY.png" alt="Rubyland Limited">
+                        <span>Ruby<span>land</span><br>Limited</span>
+                    </div>
+                    <p>With over 24 years of experience, Rubyland Limited is your trusted partner for all real estate needs in Kenya. We provide expert valuation, consultation, and property services to individuals and businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="listings.html">Properties</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Property Valuation</a></li>
+                        <li><a href="#">Feasibility Studies</a></li>
+                        <li><a href="#">Title Deed Services</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                        <li><a href="#">Investment Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Office Locations</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi Headquarters</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mombasa Branch</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kisumu Office</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                        <li><i class="fas fa-clock"></i> Sat: 9:00 AM - 1:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rubyland Limited. All Rights Reserved. | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Assets/js/main.js"></script>
+    <script>
+        // Property Management Page Scripts
+        
+        // Image Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliderTrack = document.getElementById('propertySlider');
+            const slides = document.querySelectorAll('.slider-slide');
+            const prevBtn = document.querySelector('.prev-slide');
+            const nextBtn = document.querySelector('.next-slide');
+            
+            let currentSlide = 0;
+            const slideCount = slides.length;
+            
+            function updateSlider() {
+                sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+            
+            nextBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSlider();
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+                updateSlider();
+            });
+            
+            // Auto slide every 5 seconds
+            setInterval(function() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSlider();
+            }, 5000);
+            
+            // Scroll Animations
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85 &&
+                    rect.bottom >= 0
+                );
+            }
+            
+            function handleScrollAnimation() {
+                document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                    if (isElementInViewport(el)) {
+                        el.classList.add('animated');
+                    }
+                });
+            }
+            
+            // Initial check
+            handleScrollAnimation();
+            
+            // Listen for scroll
+            window.addEventListener('scroll', handleScrollAnimation);
+            
+            // Animate stats on load
+            setTimeout(() => {
+                document.querySelectorAll('.hero-stat-item').forEach((stat, index) => {
+                    setTimeout(() => {
+                        stat.classList.add('animated');
+                    }, index * 200);
+                });
+            }, 500);
+            
+            // Hover card animations
+            document.querySelectorAll('.hover-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Feature card icon animations
+            document.querySelectorAll('.feature-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    const icon = this.querySelector('.feature-icon');
+                    icon.style.transform = 'rotate(360deg) scale(1.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    const icon = this.querySelector('.feature-icon');
+                    icon.style.transform = 'rotate(0) scale(1)';
+                });
+            });
+        });
+        </script>
+</body>
+</html>
