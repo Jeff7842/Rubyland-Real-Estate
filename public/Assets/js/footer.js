@@ -7,7 +7,7 @@ connectedCallback(){
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="logo">
-                        <img src="assets/img/logo ONLY.png" alt="Rubyland Limited" style="height: auto;">
+                        <img src="https://ewuyalhslafkrlmrpyam.supabase.co/storage/v1/object/public/rubyland/logo%20ONLY.png" alt="Rubyland Limited" style="height: auto;">
                         <span>Rubyland<br>Limited</span>
                     </div>
                     <p>With over 24 years of experience, Rubyland Limited is your trusted partner for all real estate needs in Kenya. We provide expert valuation, consultation, and property services to individuals and businesses.</p>
