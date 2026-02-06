@@ -74,7 +74,9 @@
         .main-navbar.scrolled .logo {
             color: var(--dark-gray);
         }
-
+        .mobile-toggle{
+            color: var(--dark-gray);
+        }
 
 /* contact.css */
 .contact-hero {

@@ -22,7 +22,7 @@ connectedCallback(){
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about us.html">About Us</a></li>
                         <li><a href="index.html#services">Services</a></li>
-                        <li><a href="Download.html">Documents</a></li>
+                        <li><a href="Knowledge Center.html">Knowledge Center</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact us.html">Contact</a></li>
                     </ul>

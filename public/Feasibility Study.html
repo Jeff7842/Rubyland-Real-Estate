@@ -75,6 +75,12 @@
             margin-right: auto;
             line-height: 1.6;
         }
+
+        .hero-stats-row {
+            display: flex; 
+            gap: 35px; 
+            justify-content: center;
+        }
         
         /* Problem Section */
         .problem-section {
@@ -668,7 +674,12 @@
         
         @media (max-width: 768px) {
             .feasibility-hero {
-                height: 70vh;
+                height: 100vh;
+            }
+
+            .hero-stats-row{
+                flex-direction: column;
+                gap: 20px;
             }
             
             .process-stats {
@@ -706,7 +717,7 @@
             <p class="hero-tagline">Professional feasibility studies that transform uncertainty into strategic advantage. Our 8-step process creates your roadmap to optimal property returns.</p>
             <a href="#8-step-process" class="btn btn-primary" style="background: #cf0202; color: #ffffff; border-color: #cf0202;">Explore Our 8-Step Process</a>
             
-            <div class="hero-stats-row" style="margin-top: 60px; display: flex; gap: 35px; justify-content: center;">
+            <div class="hero-stats-row" style="margin-top: 60px; ">
                 <div class="hero-stat-item">
                     <span class="hero-stat-number" style="color: #ffd700;">$1.2M+</span>
                     <span class="hero-stat-text">Studies Conducted</span>

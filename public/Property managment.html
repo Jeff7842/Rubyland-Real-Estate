@@ -48,13 +48,15 @@
             color: var(--white);
             position: relative;
             overflow: hidden;
+            
         }
         
         .management-hero-content {
             max-width: 900px;
-            padding: 0 20px;
+            padding:0 20px;
             position: relative;
             z-index: 2;
+            
         }
         
         .management-hero h1 {
@@ -587,7 +589,12 @@
         
         @media (max-width: 768px) {
             .management-hero {
-                height: 70vh;
+                height: 100vh;
+            }
+
+            .management-hero-content {
+                margin-top: 50px;
+                margin-bottom: 30px;
             }
             
             .features-grid {

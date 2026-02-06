@@ -934,14 +934,17 @@ margin-bottom:50px;
             max-width:2000px;
         }
         .services-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap:50px;
-        }
-        .services-container {
-            max-width: 1500px;
-            margin: 0 auto;
-        }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+.service-item {
+    width: 100%;
+    margin: 0 auto;
+}
         
         .service-item {
             display: flex;
@@ -1103,6 +1106,23 @@ margin-bottom:50px;
         }
         
         /* Responsive */
+        @media (max-width: 1200px) {
+            .story-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .cards-grid, .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .mv-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
         @media (max-width: 992px) {
             .story-container {
                 grid-template-columns: 1fr;
@@ -1139,11 +1159,16 @@ margin-bottom:50px;
                 left: 21px;
                 right: auto;
             }
+            
         }
         
         @media (max-width: 768px) {
             .section {
                 padding: 70px 0;
+            }
+
+            .about-hero {
+                height: 90vh;
             }
             
             .cards-grid, .team-grid {
@@ -1157,6 +1182,10 @@ margin-bottom:50px;
             .stat-number {
                 font-size: 2rem;
             }
+
+            .team-card {
+                width: 100%;
+            }
             
             .graph-container {
                 padding: 20px;
@@ -1165,6 +1194,15 @@ margin-bottom:50px;
             .map-container {
                 height: 400px;
             }
+
+            .services-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0;
+        position: relative;
+        left: -160px;
+        justify-content: center;
+    }
             
             .footer-grid {
                 grid-template-columns: 1fr;
@@ -1184,5 +1222,15 @@ margin-bottom:50px;
                 flex-direction: column;
                 text-align: center;
             }
+            
+            .service-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .service-icon {
+        margin-bottom: 10px;
+    }
         }
     

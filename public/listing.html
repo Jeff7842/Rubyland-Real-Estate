@@ -144,8 +144,33 @@
         }
 
         @media (max-width: 768px) {
+            .error-page {
+                background-color:var(--white);
+            }
+            .error-grid{
+            grid-template-columns: 1fr;
+            gap:0px;
+            }
+            .error-content {
+                order: 2;
+                text-align: center;
+            }
+            .error-code{
+                font-size:96px;
+            }
+            .error-title {
+                font-size:36px;
+            }
+
+            .error-svg svg{
+            max-width: 300px;
+            height: auto;
+        }
             .error-container {
-                padding: 40px 20px;
+                background-color:transparent; 
+                box-shadow: none;
+                padding: 40px 0px;
+                max-width: 1500px;
             }
             
             .error-actions {
@@ -308,9 +333,9 @@
                     <div class="nav-links-grid">
                         <a href="index.html">Home</a>
                         <a href="About Us.html">About Us</a>
-                        <a href="#">Services</a>
-                        <a href="#">Available Listings</a>
-                        <a href="#">Blog</a>
+                        <a href="index.html#services">Services</a>
+                        <a href="knowledge center.html">Knowledge Center</a>
+                        <a href="blog.html">Blog</a>
                         <a href="contact us.html">Contact Us</a>
                     </div>
                 </div>
