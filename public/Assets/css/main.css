@@ -785,7 +785,8 @@ position: static;
 }
 
 .process-step.active .process-circle,
-.process-step.completed .process-circle {
+.process-step.completed .process-circle
+ {
     background: #ff0000;
     border-color: #ff0000;
     color: white;
@@ -809,6 +810,23 @@ position: static;
     border-left: 4px solid #ff0000;
     box-shadow: 0 6px 18px rgba(0,0,0,0.05);
 }
+.process-number {
+            display: none;
+            background: transparent;
+            color: #333333b3;
+            border:1px solid #333333b3 ;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 14px;
+ }
+ .process-step.active .process-number,
+  .process-step.completed .process-number{
+    background: var(--primary-red);
+    color:#f6f6f6;
+    border: 1px solid var(--primary-red);
+ }
 
 .process-step.right .process-content {
     border-left: none;
@@ -2011,10 +2029,9 @@ position: static;
     .process-circle{
         display: none;
     }
-      .process-step.active .process-circle,
-.process-step.completed .process-circle {
-
-}      
+      .process-number{
+        display: inline-block;
+      }     
             .knowledge-grid {
                 grid-template-columns: 1fr;
             }
