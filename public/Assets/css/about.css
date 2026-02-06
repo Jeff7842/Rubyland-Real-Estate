@@ -1168,9 +1168,12 @@ margin-bottom:50px;
             }
 
             .about-hero {
-                height: 90vh;
+                height: 105vh;
             }
-            
+            .hero-content {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
             .cards-grid, .team-grid {
                 grid-template-columns: 1fr;
             }
