@@ -1,0 +1,94 @@
+/* ================================
+   ADMIN AUTH – ISOLATED STYLES
+================================ */
+
+.admin-auth-body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #111111 0%,
+    #2f3d4d 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.admin-auth-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.admin-auth-card {
+  max-width: 420px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 40px 35px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.admin-auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-auth-header img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.admin-auth-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.admin-auth-header p {
+  font-size: 13px;
+  color: #666;
+}
+
+.admin-auth-form .form-group {
+  margin-bottom: 20px;
+}
+
+.admin-auth-form label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.toggle-password:hover {
+  color: var(--primary-red);
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+}
+
+.admin-auth-footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
