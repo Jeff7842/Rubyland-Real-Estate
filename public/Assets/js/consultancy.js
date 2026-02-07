@@ -302,10 +302,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ✅ Single source of truth
     const formattedDate = formatVerboseDate(date);
 
-// Internal value stays ISO (backend-friendly)
-hiddenInput.value = date;
-button.innerHTML = `<i class="fas fa-calendar-alt"></i> ${formattedDate}`;
-popover.classList.remove('active');
+ // Internal value stays ISO (backend-friendly)
+ hiddenInput.value = date;
+ button.innerHTML = `<i class="fas fa-calendar-alt"></i> ${formattedDate}`;
+ popover.classList.remove('active');
   });
 
   calendar.addEventListener('change', () => {
@@ -340,7 +340,7 @@ popover.classList.remove('active');
   hiddenInput.value = date; // ISO for backend
   button.innerHTML = `<i class="fas fa-calendar-alt"></i> ${formattedDate}`;
   popover.classList.remove('active');
-});
+ });
 
   // Close when clicking outside
   document.addEventListener('click', (e) => {

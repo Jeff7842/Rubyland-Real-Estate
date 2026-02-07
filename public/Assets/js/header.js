@@ -98,7 +98,7 @@ class HeaderComponent extends HTMLElement {
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="News Hub.html">News Hub</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle-title" href="#">Resources <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">

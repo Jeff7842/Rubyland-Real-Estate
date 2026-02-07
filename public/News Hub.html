@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubyland News Hub | Real Estate Insights & Market Intelligence</title>
+    <meta name="description" content="Authoritative real estate news, market analysis, investment trends, and legal updates from Kenya's leading property consultancy.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Cally Calendar Component -->
+    <script type="module" src="https://unpkg.com/cally"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo ONLY.png">
+    <link rel="stylesheet" href="Assets/css/main.css">
+     <link rel="stylesheet" href="Assets/css/newsHub.css">
+     <script src="Assets/js/footer.js" type="text/javascript" defer></script>
+    
+    <!-- Blog-specific CSS -->>
+</head>
+<body>
+    <!-- Blog-Only Navigation Bar -->
+    <nav class="blog-navbar">
+        <div class="container blog-nav-container">
+            <a href="index.html" class="blog-nav-logo">
+                <img src="assets/img/logo ONLY.png" alt="Rubyland Logo">
+                <span>Rubyland</span> News Hub
+            </a>
+            
+            <div class="blog-nav-links">
+                <a href="#blog-home">Blog Home</a>
+                
+                <div class="blog-dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i></a>
+                    <div class="blog-dropdown-content">
+                        <a href="#investment">Investment</a>
+                        <a href="#land">Land</a>
+                        <a href="#legal">Legal</a>
+                        <a href="#market-trends">Market Trends</a>
+                        <a href="#policy">Policy</a>
+                        <a href="#housing">Housing</a>
+                    </div>
+                </div>
+                
+                <a href="#newest">Latest News</a>
+                <a href="#popular">Most Popular</a>
+                <button class="blog-search-btn" id="blogSearchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider - Top 5 Most Popular News -->
+    <section class="blog-hero" id="blog-home">
+        <div class="hero-slider">
+            <div class="slider-track" id="heroSlider">
+                <!-- Slide 1 -->
+                <div class="slider-slide">
+                    <img src="https://ewuyalhslafkrlmrpyam.supabase.co/storage/v1/object/public/rubyland/valuation-2.jpg" alt="Kenyan Real Estate Market Trends" class="slider-image">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-category">Market Trends</span>
+                            <h1 class="slide-title">2024 Kenyan Real Estate Market Outlook: Opportunities & Challenges</h1>
+                            <p class="slide-excerpt">Comprehensive analysis of the Kenyan property market trends, investment hotspots, and regulatory changes shaping the industry in 2024.</p>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Charles Peter Mwangi</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>March 15, 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>2,845 views</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Full Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slider-slide">
+                    <img src="https://ewuyalhslafkrlmrpyam.supabase.co/storage/v1/object/public/rubyland/RealEstateDueDiligence-1.jpg" alt="Land Title Verification" class="slider-image">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-category">Legal</span>
+                            <h1 class="slide-title">New Land Laws 2024: What Every Property Investor Must Know</h1>
+                            <p class="slide-excerpt">Analysis of recent amendments to land registration laws and their implications for property transactions and title verification processes.</p>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Jonathan Karoki</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>March 10, 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>3,127 views</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Full Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slider-slide">
+                    <img src="https://ewuyalhslafkrlmrpyam.supabase.co/storage/v1/object/public/rubyland/PropertyDevelopmentPlanning%20(1).jpg" alt="Property Investment" class="slider-image">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-category">Investment</span>
+                            <h1 class="slide-title">Top 5 Emerging Real Estate Markets in Kenya for 2024</h1>
+                            <p class="slide-excerpt">Identifying high-potential investment locations with infrastructure development and growth projections based on market data analysis.</p>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Rosebell Mwaura</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>March 5, 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>2,543 views</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Full Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="slider-slide">
+                    <img src="https://ewuyalhslafkrlmrpyam.supabase.co/storage/v1/object/public/rubyland/ExpertConsultancy-2.jpg" alt="Affordable Housing" class="slider-image">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-category">Housing</span>
+                            <h1 class="slide-title">Affordable Housing Project Update: Progress & Investment Opportunities</h1>
+                            <p class="slide-excerpt">Latest developments in government and private sector affordable housing initiatives across Kenya's major urban centers.</p>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Grace W. Muiruri</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>February 28, 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1,987 views</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Full Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 5 -->
+                <div class="slider-slide">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2068&q=80" alt="Commercial Property" class="slider-image">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-category">Market Trends</span>
+                            <h1 class="slide-title">Commercial Property Market Analysis: Post-Pandemic Recovery Trends</h1>
+                            <p class="slide-excerpt">Examining office, retail, and industrial property performance with data-driven insights for investors and developers.</p>
+                            <div class="slide-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>David Kinuthia</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>February 22, 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>2,345 views</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Read Full Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-arrows">
+                <div class="slider-arrow" id="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-arrow" id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+                <div class="slider-dot" data-slide="3"></div>
+                <div class="slider-dot" data-slide="4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Popular News Section - Top 10 Articles -->
+    <section class="section" id="popular">
+        <div class="container">
+            <h2 class="section-title">Most Popular News</h2>
+            <p class="subtitle">Top 10 most-read articles based on engagement data</p>
+            
+            <div class="news-grid" id="popularNewsGrid">
+                <!-- News cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newest News Section - Last 7 Days -->
+    <section class="section" id="newest" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">Newest This Week</h2>
+            <p class="subtitle">Latest market updates and regulatory news from the past 7 days</p>
+            
+            <div class="news-grid" id="newestNewsGrid">
+                <!-- News cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- All News Section - Complete Archive -->
+    <section class="section" id="all-news">
+        <div class="container">
+            <h2 class="section-title">All News Archive</h2>
+            
+            <!-- Search & Filter Controls -->
+            <div class="news-controls">
+                <div class="controls-top">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="newsSearch" placeholder="Search news articles...">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="results-counter">
+                        Showing <span id="resultsCount">48</span> of <span id="totalCount">48</span> news articles
+                    </div>
+                </div>
+                
+                <div class="controls-bottom">
+                    <div class="filter-tags">
+                        <div class="filter-tag active" data-filter="all">All Topics</div>
+                        <div class="filter-tag" data-filter="investment">Investment</div>
+                        <div class="filter-tag" data-filter="land">Land</div>
+                        <div class="filter-tag" data-filter="legal">Legal</div>
+                        <div class="filter-tag" data-filter="market-trends">Market Trends</div>
+                        <div class="filter-tag" data-filter="policy">Policy</div>
+                        <div class="filter-tag" data-filter="housing">Housing</div>
+                    </div>
+                    
+                    <div class="date-filters">
+                        <div class="date-filter">
+                            <label for="dateFrom">From</label>
+                            <button  class="calendar-btn" id="dateFromBtn">
+                                Select start date
+                            </button>
+                            <div popover id="cally-popover1" class="dropdown bg-base-100 rounded-box shadow-lg">
+                                <calendar-date class="cally" onchange="document.getElementById('dateFromBtn').innerText = this.value; filterNews()">
+                                    <svg aria-label="Previous" class="fill-current size-4" slot="previous" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg>
+                                    <svg aria-label="Next" class="fill-current size-4" slot="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+                                    <calendar-month></calendar-month>
+                                </calendar-date>
+                            </div>
+                        </div>
+                        
+                        <div class="date-filter">
+                            <label for="dateTo">To</label>
+                            <button  class="calendar-btn" id="dateToBtn">
+                                Select end date
+                            </button>
+                            <div popover id="cally-popover2" class="dropdown bg-base-100 rounded-box shadow-lg">
+                                <calendar-date class="cally" onchange="document.getElementById('dateToBtn').innerText = this.value; filterNews()">
+                                    <svg aria-label="Previous" class="fill-current size-4" slot="previous" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg>
+                                    <svg aria-label="Next" class="fill-current size-4" slot="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+                                    <calendar-month></calendar-month>
+                                </calendar-date>
+                            </div>
+                        </div>
+                        <div class="date-filter">
+  <label>&nbsp;</label>
+  <button class="calendar-btn reset-btn" id="resetDateFilter">
+    Reset
+  </button>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- All News Grid -->
+            <div class="all-news-grid" id="allNewsGrid">
+                <!-- All news cards will be dynamically inserted here -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark-gray); color: var(--white); padding: 60px 0 30px;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="index.html" class="blog-nav-logo" style="color: var(--white); justify-content: center; margin-bottom: 20px;">
+                    <img src="assets/img/logo ONLY.png" alt="Rubyland Logo">
+                    <span>Rubyland</span> News Hub
+                </a>
+                <p style="max-width: 600px; margin: 0 auto; color: #aaa; line-height: 1.6;">
+                    Authoritative real estate news, market analysis, and investment insights from Kenya's leading property consultancy with 24+ years of experience.
+                </p>
+            </div>
+        </div>
+    </footer>
+<footer-component></footer-component>
+    <script src="Assets/js/newsHub.js"></script>
+</body>
+</html>
