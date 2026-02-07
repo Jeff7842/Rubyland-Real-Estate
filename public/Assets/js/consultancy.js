@@ -1,14 +1,27 @@
 // consultancy.js
 function showToast(message, type = "success", duration = 7000) {
-    const toast = document.querySelector(".form-status");
+  const container = document.querySelector(".form-status");
+  if (!container) return;
 
-    toast.textContent = message;
-    toast.className = `form-status show ${type}`;
+  // Enforce max 4 toasts
+  const existingToasts = container.querySelectorAll(".toast");
+  if (existingToasts.length >= 4) {
+    existingToasts[0].remove(); // FIFO
+  }
 
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, duration);
+  const toast = document.createElement("div");
+  toast.className = `toast ${type}`;
+  toast.textContent = message;
+
+  container.appendChild(toast);
+
+  // Auto dismiss
+  setTimeout(() => {
+    toast.style.animation = "toast-out 0.25s ease forwards";
+    setTimeout(() => toast.remove(), 250);
+  }, duration);
 }
+
 
 function formatVerboseDate(dateString) {
   const date = new Date(dateString);
@@ -283,6 +296,9 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
+  
+
+
     // ✅ Single source of truth
     const formattedDate = formatVerboseDate(date);
 
@@ -291,6 +307,40 @@ hiddenInput.value = date;
 button.innerHTML = `<i class="fas fa-calendar-alt"></i> ${formattedDate}`;
 popover.classList.remove('active');
   });
+
+  calendar.addEventListener('change', () => {
+  const date = calendar.value;
+  if (!date) return;
+
+  const selected = new Date(date);
+  const today = new Date();
+
+  // Normalize both to midnight (enterprise-safe)
+  selected.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+
+  const day = selected.getDay();
+
+  // ❌ Block today & past dates
+  if (selected <= today) {
+    hiddenInput.value = '';
+    button.innerHTML = '<i class="fas fa-calendar-alt"></i> Select Date';
+    popover.classList.remove('active');
+
+    showToast(
+      "You cannot book a consultation for today or a past date. Please select a future weekday.",
+      "error"
+    );
+    return;
+  }
+
+  // ✅ Valid date (future weekday)
+  const formattedDate = formatVerboseDate(date);
+
+  hiddenInput.value = date; // ISO for backend
+  button.innerHTML = `<i class="fas fa-calendar-alt"></i> ${formattedDate}`;
+  popover.classList.remove('active');
+});
 
   // Close when clicking outside
   document.addEventListener('click', (e) => {

@@ -520,27 +520,28 @@ button:is([aria-pressed="true"], :focus-visible){
     position: fixed;               /* Toast behavior */
     top: 80px;                      /* Change to bottom if you want */
     right: 35px;
-    max-width: 320px;
-    padding: 14px 18px;
-    border-radius: 8px;
-
-    background: #1f2933;            /* Dark neutral */
+    background:transparent;            /* Dark neutral */
     color: #fff;
     font-size: 14px;
     line-height: 1.4;
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     z-index: 9999;
-
     display: flex;
     align-items: center;
-    gap: 10px;
-
-    opacity: 0;
-    transform: translateY(-10px);
+    gap: 40px;
     pointer-events: none;
 
-    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+.form-status .toast{
+ max-width: 320px;
+padding: 14px 18px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: toast-in 0.25s ease forwards; 
+    margin-top: 8px;       
 }
 
 /* Visible state */
@@ -550,16 +551,30 @@ button:is([aria-pressed="true"], :focus-visible){
     pointer-events: auto;
 }
 
-.form-status.success {
+.form-status  .toast.success {
     background: #d4edda;
     color: #155724;
     display: block;
 }
 
-.form-status.error {
+.form-status  .toast.error {
     background: #ffc3c8;
     color: #721c24;
     display: block;
+}
+
+@keyframes toast-in {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toast-out {
+  to {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.96);
+  }
 }
 
 /* Responsive */
